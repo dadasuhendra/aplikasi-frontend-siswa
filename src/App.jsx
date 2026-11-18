@@ -85,7 +85,7 @@ export default function App() {
       {pesan && <p className={pesan.error ? "info galat" : "info sukses"}>{pesan.teks}</p>}
 
       <form className="form" onSubmit={simpan}>
-        <h2>{modeEdit ? "Ubah data siswa" : "Tambah siswa"}</h2>
+        <h2>{modeEdit ? "Ubah data siswa" : "Tambah Data siswa"}</h2>
         <label>
           Kode siswa
           <input name="kode_siswa" value={form.kode_siswa} onChange={ubahInput} disabled={modeEdit} required />
@@ -107,7 +107,7 @@ export default function App() {
           <input name="jurusan_siswa" value={form.jurusan_siswa} onChange={ubahInput} required />
         </label>
         <div className="aksi">
-          <button type="submit" className="utama">{modeEdit ? "Simpan perubahan" : "Tambah siswa"}</button>
+          <button type="submit" className="utama">{modeEdit ? "Simpan perubahan" : "Tambah Data siswa"}</button>
           {modeEdit && <button type="button" onClick={batal}>Batal</button>}
         </div>
       </form>
